@@ -1,0 +1,124 @@
+* ,body, html{
+   margin: 0;
+   padding: 0;
+  
+}
+html{
+  height: 100%;
+}
+body{
+ 
+  background-color: rgb(182, 179, 179);
+}
+
+/* bare noire*/
+
+.title{
+  font-size: 90px;
+  font-size-adjust: inherit;
+  color: #ddd;
+  text-align: center;
+  padding: 50px;
+  
+  background-color: rgb(65, 64, 64)
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  cursor: pointer;
+  display: block;
+  color: #f2f2f2;
+  font-size: 25px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+
+/*images*/
+img {
+  max-width:100%;
+  width: 100%;
+  height: 100%;
+}
+.cycle-slideshow{
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+  position: relative;
+  margin: auto;
+  
+  overflow: hidden;
+}
+.cycle-prev, .cycle-next {
+  font-size: 200%;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  cursor: pointer;
+}
+.cycle-prev{left: 3%;}
+.cycle-next{right: 3%;}
+.cycle-pager{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+  bottom: 10px;
+}
+.cycle-pager span{
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+   color: transparent;
+  white-space: nowrap;
+}
+.cycle-pager .cycle-pager-active{background-color: rgb(102, 97, 97);}
+
+/* Button */
+.mybutton{
+  background-position: center center;
+  background-size: cover;
+  font-size: 300%;
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  cursor: pointer;
+  right: 2%;
+  left: 2%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+ 
+}
+@media screen and (max-width: 800px){
+  .title{font-size: 45px;  padding: 15px;}
+  .mybutton{ font-size: 25px;}
+  .topnav a {font-size: 15px;  padding: 7px 8px;}
+  .cycle-pager span{  width: 8px; height: 8px; margin: 0 2px;}
+}
